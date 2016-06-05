@@ -5,7 +5,7 @@
 <html>
 <head>
 
-<title>Refinement a Educational Category Flat Bootstrap Responsive  Website Template | Contact :: w3layouts</title>
+<title>Govt. Post Graduate College,Samundri</title>
 <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/lightbox.css">
@@ -36,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span class="icon-bar"></span>
                             </button>
                             <div class="navbar-brand">
-                                <h1><a href="index">Refinement</a></h1>
+                                <h1><a href="~/Home/index">College</a></h1>
                             </div>
                         </div>
 
@@ -109,21 +109,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="gallery-grids-top">
                     <div class="gallery-grids">
-                        <div class="col-md-3 gallery-grid">
-                            <a class="example-image-link" href="~/images/g1.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g1.jpg" alt="" /></a>
-                        </div>
-                        <div class="col-md-3 gallery-grid">
-                            <a class="example-image-link" href="~/images/g2.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g2.jpg" alt="" /></a>
-                        </div>
-                        <div class="col-md-3 gallery-grid">
-                            <a class="example-image-link" href="~/images/g3.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g3.jpg" alt="" /></a>
-                        </div>
-                        <div class="col-md-3 gallery-grid">
-                            <a class="example-image-link" href="~/images/g4.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g4.jpg" alt="" /></a>
-                        </div>
-                        <div class="clearfix"> </div>
+                        @foreach (var x in @ViewBag.images)
+                        {
+
+                            <div class="col-md-3 gallery-grid">
+                                <a class="example-image-link" href="@x.Name" data-lightbox="example-set" data-title=""><img class="example-image" src="@x.Name" alt="" /></a>
+
+                                <div class="clearfix"> </div>
+                            </div>
+
+                        }
                     </div>
-                    <div class="gallery-grids gallery-grids-middle">
+
+                    @*<div class="gallery-grids gallery-grids-middle">
                         <div class="col-md-3 gallery-grid">
                             <a class="example-image-link" href="~/images/g5.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g5.jpg" alt="" /></a>
                         </div>
@@ -137,8 +135,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a class="example-image-link" href="~/images/g8.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="~/images/g8.jpg" alt="" /></a>
                         </div>
                         <div class="clearfix"> </div>
-                    </div>
-                    <div class="gallery-grids">
+                    </div>*@
+                    @*<div class="gallery-grids">
 
                        
 
@@ -160,7 +158,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
                         <div class="clearfix"> </div>
-                    </div>
+                    </div>*@
                     <script src="js/lightbox-plus-jquery.min.js"></script>
                 </div>
             </div>

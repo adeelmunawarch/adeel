@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Refinement a Educational Category Flat Bootstrap Responsive  Website Template | Contact :: w3layouts</title>
+    <title>Govt. Post Graduate College,Samundri</title>
     <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/lightbox.css">
@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span class="icon-bar"></span>
                             </button>
                             <div class="navbar-brand">
-                                <h1><a href="index">Refinement</a></h1>
+                                <h1><a href="~/Home/index">College</a></h1>
                             </div>
                         </div>
 
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="contact-info">
                     <div class="col-md-4 contact-grid">
                         <h4>Address 1</h4>
-                        <p>Govt. Post Graduate College, Samundr</p>
+                        <p>Govt. Post Graduate College, Samundri</p>
                         <p>Telephone : 0413-0000000</p>
                         <p>Freephone : 0900-0000000</p>
                         <p>Email : <a href="mailto:info@example.com"> mail@example.com</a></p>
@@ -127,11 +127,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="contact-form">
                     <h4>Contact Form</h4>
-                    <form>
-                        <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                        <input class="email" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                        <input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
-                        <textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                    <form method="post" action="~/Home/contact">
+                        <input type="text" name="Name" placeholder="Name"  required="">
+                        <input type="email"  name="Email" placeholder="Email" required="">
+                        <input type="text" name="Telephone" placeholder="Telephone" required="">
+                        <textarea name="Message" placeholder="Message" required=""></textarea>
                         <input type="submit" value="Submit">
                     </form>
                 </div>
